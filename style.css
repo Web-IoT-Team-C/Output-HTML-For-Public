@@ -1,12 +1,5 @@
-.test{
-	background: red;
-}
-
-<style>
 .mk1{list-style-image:url(images/mk1.gif)}
-</style>
 
-<style>
 section ol {
 	margin: 0;
 	padding: 0;
@@ -49,7 +42,7 @@ img{
     left: 130px;
 }
 
-<!-
+/*
 .text{
     width: 400px;
     font-size: 30px;
@@ -58,7 +51,7 @@ img{
 	top: 25px;
     left: 30px;
 }
-->
+*/
 
 .map {
     position: relative;
