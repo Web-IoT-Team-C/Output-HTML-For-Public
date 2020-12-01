@@ -1,3 +1,3 @@
 function test(){
-    alert("TEST");
+    alert("危険");
 }
