@@ -1,71 +1,9 @@
-.test{
-	background: red;
+.block{
+	display: block;
 }
 
-.mk1{list-style-image:url(images/mk1.gif)}
-
-section ol {
-	margin: 0;
-	padding: 0;
-	font-size: 86%;
-	list-style: none;
-}
-section ol li {
-	padding-left: 35px;
-	line-height: 2.5em;
-	background: left top no-repeat;
-	background-size: 30px auto;
-}
-section ol li:nth-child(1) {
-	background-image: url(images/1.gif);
-}
-section ol li:nth-child(2) {
-	background-image: url(images/2.gif);
-}
-section ol li:nth-child(3) {
-	background-image: url(images/3.gif);
-}
-
-div{
-	width: 700px;
-	position: relative;
-}
-img{
-	width: 100%;
-}
-
-.btn{
-    width: 90px;
-    text-align: center;
-    border-radius: 3px;
-    background-color: #1e90ff;
-    color: #ffffff;
-	padding: 3px;
-	position: absolute;
-	top: 650px;
-    left: 130px;
-}
-
-/*
-.text{
-    width: 400px;
-    font-size: 30px;
-	color: #ffa500;
-	position: absolute;
-	top: 25px;
-    left: 30px;
-}
-*/
-
-.map {
-    position: relative;
-}
 .picture{
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; 
-    position: absolute;
-    top: 25%;
-    right: 1%;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
 }
