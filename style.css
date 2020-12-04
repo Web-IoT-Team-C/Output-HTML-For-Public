@@ -1,3 +1,7 @@
+body{
+	background-color: #E6FFE9;
+}
+
 .block{
 	display: block;
 }
@@ -49,4 +53,9 @@
     top: 12.5px;
     left: 10px;
     color: black;
+}
+
+.cover{
+	border-radius: 15px;
+	background-color: #FFFFFF;
 }
