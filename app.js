@@ -4,7 +4,12 @@ var testData = {
     湿度: 53,
 }
 
-function main(){var num = 1;
+function main(){
+    var num = 1;
+    var w = $('.wrapper').width();
+    var h = $('.wrapper').height();
+    $('.charter').attr('width', w);
+    $('.charter').attr('height', h);
     for(i in testData){
         var ctx = document.getElementById("chart"+num++);
         showChart(ctx, i, testData[i])
