@@ -1,20 +1,5 @@
 body{
-	background-color: #E6FFE9;
-}
-
-.block{
-	display: block;
-}
-
-.picture{
-	object-fit: cover;
-	width: 100%;
-	height: auto;
-}
-
-.wrapper{
-	width: 100%;
-	height: 100%;
+	background-color: #CBFFD3;
 }
 
 .point-item1 {
@@ -55,7 +40,11 @@ body{
     color: black;
 }
 
-.cover{
-	border-radius: 15px;
-	background-color: #FFFFFF;
+/*白い枠を描写*/
+.frame{
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 3%;
+    margin: 3%;
+    margin-top: 30px;
 }

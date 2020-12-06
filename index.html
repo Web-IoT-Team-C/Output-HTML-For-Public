@@ -12,10 +12,22 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-6 block mx-auto">
-					<img src ="images/map.png" class="picture" alt="フロアマップ">
+
+				<!--左側の要素-->
+				<div class="col-7">
+					<!--題名-->
+					<div class="frame">
+						<h1>コロナ感染に対するフロアの環境状態</h1>
+					</div>
+
+					<!--総合評価のグラフ-->
+					<div class="frame">
+						<canvas id="chart"></canvas>
+					</div>
 				</div>
-				<div class="col-6 block">
+
+				<div class="col-5">
+					<div class="frame">
 
 					<table border="10" width="500" hight="1000">
 						<caption align="top" valign="top"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">各店舗の環境状態</font></caption>
@@ -37,29 +49,23 @@
 						</tr>
 					</table>
 					<div class="container row cover"> 
-					        <div class="legend-item col-4">
+					    <div class="legend-item col-4">
 							<p class="point-item1"><img src="images/1.png"></p>
 							<span class="item-desc1"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">危険</font></span>
-							</div>
-							
-															<div class="legend-item col-4">
-									<p class="point-item2"><img src="images/2.png"></p>
-									<span class="item-desc2"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">やや危険</font></span>
-								</div>
-							
-															<div class="legend-item col-4">
-									<p class="point-item3"><img src="images/3.png"></p>
-									<span class="item-desc3"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">要注意</font></span>
-								</div>					
+						</div>
+						
+						<div class="legend-item col-4">
+							<p class="point-item2"><img src="images/2.png"></p>
+							<span class="item-desc2"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">やや危険</font></span>
+						</div>
+						
+						<div class="legend-item col-4">
+							<p class="point-item3"><img src="images/3.png"></p>
+							<span class="item-desc3"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">要注意</font></span>
+						</div>					
 					</div>
-					
-					<div class="container row wrapper">
-						<div class="col-lg-4 col-12"><canvas id="chart1" class="charter"></canvas></div>
-						<div class="col-lg-4 col-12"><canvas id="chart2" class="charter">></canvas></div>
-						<div class="col-lg-4 col-12"><canvas id="chart3" class="charter">></canvas></div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
@@ -67,7 +73,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-	<script type = "text/javascript" src="./app.js"></script>
+	<script type = "text/javascript" src="js/app.js"></script>
+	<script src="js/plugin.js" defer></script>
 	</body>
 	
 </html>
