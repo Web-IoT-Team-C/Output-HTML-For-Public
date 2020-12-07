@@ -22,10 +22,32 @@
 
 					<!--総合評価のグラフ-->
 					<div class="frame">
-						<canvas id="chart"></canvas>
+						<div class="container row">
+							<div class="col-8 chart-box">
+								<canvas id="chart"></canvas>
+							</div>
+
+							<table class="col-4">
+								<tr>
+									<td>二酸化炭素濃度</td>
+									<td id="co2"></td>
+								</tr>
+
+								<tr>
+									<td>湿度</td>
+									<td id="humidity"></td>
+								</tr>
+
+								<tr>
+									<td>温度</td>
+									<td id="temperature"></td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</div>
 
+				<!--右側の要素-->
 				<div class="col-5">
 					<div class="frame">
 
@@ -63,7 +85,6 @@
 							<p class="point-item3"><img src="images/3.png"></p>
 							<span class="item-desc3"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">要注意</font></span>
 						</div>					
-					</div>
 					</div>
 				</div>
 			</div>

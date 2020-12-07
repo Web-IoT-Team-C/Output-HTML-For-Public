@@ -1,11 +1,21 @@
-var testData = 43
+var testData = 70
+var testPer = {co2:"20", humidity:"56", temperture:"23"}
+
+var w = $('.chart-box').width();
+var h = $('.chart-box').height();
+$('#chart').attr('width', w);
+$('#chart').attr('height', h);
+const ctx = document.getElementById("chart");
+
+const co2 = document.getElementById("co2");
+const humidity = document.getElementById("humidity");
+const temperature = document.getElementById("temperature");
 
 function main(){
-    var w = $('.wrapper').width();
-    var h = $('.wrapper').height();
-    $('.charter').attr('width', w);
-    $('.charter').attr('height', h);
-    var ctx = document.getElementById("chart");
+    co2.innerHTML = testPer["co2"] + "ppm"
+    humidity.innerHTML = testPer["humidity"] + "%"
+    temperature.innerHTML = testPer["temperture"] + "°"
+
     showChart(ctx, "総合危険度", testData)
 }
 
