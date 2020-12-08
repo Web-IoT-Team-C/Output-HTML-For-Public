@@ -11,82 +11,36 @@
 
 	<body>
 		<div class="container-fluid">
+			<!--上部-->
+			<div class="row">
+				<div class="col-6"><img class="img" src="img/place.png"></div>
+				<div class="col-6"><img class="img" src="img/video.png"></div>
+			</div>
+
+			<!--下部-->
 			<div class="row">
 
-				<!--左側の要素-->
-				<div class="col-7">
-					<!--題名-->
-					<div class="frame">
-						<h1>コロナ感染に対するフロアの環境状態</h1>
-					</div>
-
-					<!--総合評価のグラフ-->
-					<div class="frame">
-						<div class="container row">
-							<div class="col-8 chart-box">
-								<canvas id="chart"></canvas>
-							</div>
-
-							<table class="col-4">
-								<tr>
-									<td>二酸化炭素濃度</td>
-									<td id="co2"></td>
-								</tr>
-
-								<tr>
-									<td>湿度</td>
-									<td id="humidity"></td>
-								</tr>
-
-								<tr>
-									<td>温度</td>
-									<td id="temperature"></td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-
-				<!--右側の要素-->
+				<!--左部分-->
 				<div class="col-5">
 					<div class="frame">
-
-						<table border="0" width="450" hight="100">  
-						<caption align="top" valign="top"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">各店舗の環境状態</font></caption>
-						<tr>
-							<td align=""><font size="5" face="HGP創英角ﾎﾟｯﾌﾟ体">店名</font></td>
-							<td align="left"><font size="5" face="HGP創英角ﾎﾟｯﾌﾟ体">環境状態</font></td>
-						</tr>
-						<tr>
-							<td align="justify"><font size="6" face="HGP創英角ﾎﾟｯﾌﾟ体">Tutaya Bookstor</font></td>
-							<td align="center" valign="bottom"><img src="images/3.png" width="80" height="80"></td>
-						</tr>
-						<tr>
-							<td align="justify"><font size="6" face="HGP創英角ﾎﾟｯﾌﾟ体">アレックスコンフォート</font></td>
-							<td align="center" valign="bottom"><img src="images/1.png" width="100" height="70"></td>
-						</tr>
-						<tr>
-							<td align="justify"><font size="6" face="HGP創英角ﾎﾟｯﾌﾟ体">アールベイカー</font></td>
-							<td align="center" valign="bottom"><img src="images/2.png" width="80" height="80"></td>
-						</tr>
-					</table>
-					<div class="container row cover"> 
-					    <div class="legend-item col-4">
-							<p class="point-item1"><img src="images/1.png" width="100" height="70"></p>
-							<span class="item-desc1"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">危険</font></span>
-						</div>
-						
-						<div class="legend-item col-4">
-							<p class="point-item2"><img src="images/2.png" width="80" height="80"></p>
-							<span class="item-desc2"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">やや危険</font></span>
-						</div>
-						
-						<div class="legend-item col-4">
-							<p class="point-item3"><img src="images/3.png" width="80" height="80"></p>
-							<span class="item-desc3"><font size="3" face="HGP創英角ﾎﾟｯﾌﾟ体">要注意</font></span>
-						</div>					
+						<p>施設感染危険度</p><hr>
+						<canvas id="chart"></canvas>
 					</div>
 				</div>
+
+				<!--中央部-->
+				<div class="col-2">
+					総合感染危険度
+					<div class="frame">
+					</div>
+				</div>
+
+				<!--右部分-->
+				<div class="col-5">
+					<div class="frame">
+						<p>あなたの感染危険度</p><hr>
+					</div>
+				</div>				
 			</div>
 		</div>
 
