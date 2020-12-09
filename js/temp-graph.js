@@ -1,6 +1,6 @@
 //体温をグラフに表示
 
-function temp(){
+function tempGraph(){
   var ctx = document.getElementById('temp')
 
   var chart = new Chart(ctx, {

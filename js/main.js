@@ -1,5 +1,8 @@
 function main(){
-    temp();
+    horizontalBar(30);
+    tempGraph();
+    setTimeout('horizontalBar(60)', 5000)
+    
 }
 
 main();
