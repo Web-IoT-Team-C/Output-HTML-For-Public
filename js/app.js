@@ -26,3 +26,8 @@ new Chart(document.getElementById("chart"), {
         }
     }
   });
+
+
+
+
+temp();

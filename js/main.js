@@ -1,0 +1,5 @@
+function main(){
+    temp();
+}
+
+main();
