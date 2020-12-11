@@ -4,6 +4,13 @@
 	<head>
 		<title>コロナ対策の環境状態</title>
 		<meta charset="utf-8">
+
+		<meta name="description" content="WebRTC code samples">
+    	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    	<meta itemprop="description" content="Client-side WebRTC code samples">
+    	<meta itemprop="name" content="WebRTC code samples">
+    	<meta name="mobile-web-app-capable" content="yes">
+
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/style.css"/>	
@@ -13,8 +20,16 @@
 		<div class="container-fluid">
 			<!--上部-->
 			<div class="row">
+				<!--見取り図部分-->
 				<div class="col-6"><img class="img" src="img/place.png"></div>
-				<div class="col-6"><img class="img" src="img/video.png"></div>
+
+				<!--カメラ部分-->
+				<div class="col-6">
+				    <div id="videoblock">
+        				<video id="gum-res-local" playsinline autoplay></video>
+    				</div>
+					<p id="errormessage"></p>
+				</div>
 			</div>
 
 			<!--下部-->
@@ -77,8 +92,9 @@
 	<script type="text/javascript" src="js/plugin/moment.js"></script>
 
 	<!--プログラム-->
-	<script type="text/javascript" src="js/horizontal-bar.js"></script>
-	<script type="text/javascript" src="js/temp-graph.js"></script>
+	<script type="text/javascript" src="js/graph/horizontal-bar.js"></script>
+	<script type="text/javascript" src="js/graph/temp-graph.js"></script>
+	<script type="text/javascript" src="js/camera/camera.js"></script>
 	<script type="text/javascript" src="js/main.js" defer></script>
 	</body>
 	

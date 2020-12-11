@@ -4,8 +4,9 @@ function main(){
     }
 
     tempGraph();
+    getMedia(hdConstraints);
     //setTimeout('horiBar([60]);', 1000)
-    horiBar([100]);
+    //horiBar([100]);
 }
 
 main();
