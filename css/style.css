@@ -6,16 +6,35 @@ body{
 /*白い枠を描写*/
 .frame{
     border-radius: 20px;
+    box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, .2);
     padding: 30px;
-    margin: 10px;
+    margin-top: 30px;
     background-color: #FFFFFF;
 }
 
-.img{
-    width: 100%;
-    /*height: 50%;*/
+.frame section{
+    font-size: x-large;
+    font-weight: bold;
 }
 
+.frame p{
+    color: grey;
+}
+
+/*見取り図用*/
+.img{
+    width: 100%;
+}
+
+/*「総合感染危険度」用*/
+#center-font{
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*体温の折れ線グラフ用*/
 #temp{
     width: 50%;
 }
