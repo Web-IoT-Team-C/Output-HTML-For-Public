@@ -4,6 +4,7 @@ function main(){
     }
 
     tempGraph();
+    doughnutGraph();
     getMedia(hdConstraints);
     //setTimeout('horiBar([60]);', 1000)
     //horiBar([100]);

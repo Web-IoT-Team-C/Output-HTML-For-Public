@@ -74,8 +74,13 @@
 				<div class="col-5">
 					<div class="frame">
 						<p>あなたの感染危険度</p><hr>
-						<div style="width: 50%;">
-							<canvas id="temp"></canvas>
+						<div style="display: flex">
+							<div>
+								<canvas id="mask"></canvas>
+							</div>
+							<div style="width: 50%;">
+								<canvas id="temp"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>				
@@ -92,6 +97,7 @@
 	<script type="text/javascript" src="js/plugin/moment.js"></script>
 
 	<!--プログラム-->
+	<script type="text/javascript" src="js/graph/doughnut-graph.js"></script>
 	<script type="text/javascript" src="js/graph/horizontal-bar.js"></script>
 	<script type="text/javascript" src="js/graph/temp-graph.js"></script>
 	<script type="text/javascript" src="js/camera/camera.js"></script>
