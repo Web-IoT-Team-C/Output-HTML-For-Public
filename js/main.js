@@ -1,8 +1,11 @@
 function main(){
-    horizontalBar(30);
+    for(i = 1; i <= 4; i++){
+        horizontalBar(i, [30]);
+    }
+
     tempGraph();
-    setTimeout('horizontalBar(60)', 5000)
-    
+    //setTimeout('horiBar([60]);', 1000)
+    horiBar([100]);
 }
 
 main();

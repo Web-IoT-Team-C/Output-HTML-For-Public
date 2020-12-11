@@ -1,5 +1,6 @@
-//体温をグラフに表示
+//参考URL:https://nagix.github.io/chartjs-plugin-streaming/ja/
 
+//体温をグラフに表示
 function tempGraph(){
   var ctx = document.getElementById('temp')
 
