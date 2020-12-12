@@ -44,3 +44,8 @@ meter{
 #temp{
     width: 50%;
 }
+
+.border-inner {
+    width: auto;
+    height: auto;
+}
