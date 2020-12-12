@@ -1,6 +1,6 @@
 function main(){
     for(i = 1; i <= 4; i++){
-        horizontalBar(i, [30]);
+        meterCompose("meter"+i, 70)
     }
 
     tempGraph();
