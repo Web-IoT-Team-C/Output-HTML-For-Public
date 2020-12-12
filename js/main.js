@@ -5,6 +5,7 @@ function main(){
 
     tempGraph();
     doughnutGraph();
+    centerMeter();
     getMedia(hdConstraints);
     //setTimeout('horiBar([60]);', 1000)
     //horiBar([100]);
