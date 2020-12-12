@@ -42,22 +42,22 @@
 						<hr>
 
 						<div>
-							<p>リビングダイニング</p>
+							<div>リビングダイニング</div>
 							<meter min="0" max="100" low="35" high="70" optimum="0" value="0" id="meter1"></meter>
 						</div>
 
 						<div>
-							<p>和室</p>
+							<div>和室</div>
 							<meter min="0" max="100" low="35" high="70" optimum="0" value="0" id="meter2"></meter>
 						</div>
 
 						<div>
-							<p>廊下</p>
+							<div>廊下</div>
 							<meter min="0" max="100" low="35" high="70" optimum="0" value="0" id="meter3"></meter>
 						</div>
 
 						<div>
-							<p>トイレ</p>
+							<div>トイレ</div>
 							<meter min="0" max="100" low="35" high="70" optimum="0" value="0" id="meter4"></meter>
 						</div>
 
@@ -68,10 +68,10 @@
 				<div class="col-3">
 					<div id="center-font">総合感染危険度</div>
 					<div class="center-block frame">
-						<!--<div id="center-wrapper">
-							<canvas class="border-inner"></canvas>
-						</div>-->
-						<div id="gauge" style="height: 50%;"></div>
+						<div id="gauge" style="height: 50%;">
+							<p id="show-status"></p>
+						</div>
+						<p id="show-message"></p>
 					</div>
 				</div>
 

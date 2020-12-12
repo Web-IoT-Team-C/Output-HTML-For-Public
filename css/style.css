@@ -17,7 +17,7 @@ body{
     font-weight: bold;
 }
 
-.frame p{
+.frame div div{
     color: grey;
 }
 
@@ -40,12 +40,26 @@ meter{
     margin-top: 30px;
 }
 
+/*中央のメーター用*/
+#gauge{
+    position: relative;
+}
+
+/*中央のメーターの文字用*/
+#show-status{
+    font-size: 100px;
+    bottom: 0px;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+/*中央のメーターのメッセージ用*/
+#show-message{
+    font-size: xx-large;
+    text-align: center;
+}
+
 /*体温の折れ線グラフ用*/
 #temp{
     width: 50%;
-}
-
-.border-inner {
-    width: auto;
-    height: auto;
 }

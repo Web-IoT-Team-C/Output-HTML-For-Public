@@ -1,26 +1,34 @@
 //参考URL:https://github.com/toorshia/justgage#options
 
-/*function centerMeter(percent){
-    const wrapper = document.getElementById("center-wrapper")
-    const width = wrapper.clientWidth
-    const height = wrapper.clientHeight
-
-    var canvas = $(".border-inner")[0];
-    var ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, 500, 500);  // 以前描画したcanvasがあればクリア。
-
-    ctx.beginPath();
-    ctx.lineWidth = 10;
-    ctx.strokeStyle = "red";
-
-    // min -200, max 20
-    var result = percent;   // 60%の表記
-    var startPoint = -1.8* (100 - result)
-    ctx.arc(width/2, height, 78, startPoint / 180 * Math.PI, Math.PI, true);
-    ctx.stroke();
-}*/
-
+//引数として表示したい割合を％形式にして、数値型で渡す
 function centerMeter(data){
+
+    const parent = document.getElementById("gauge");
+    const child = document.getElementById("show-status");
+    const messageBox = document.getElementById("show-message");
+
+    const width = parent.clientWidth;
+    
+    //表示する文字を設定
+    let result;
+    let message;
+    if(data < 33){
+        result = "A";
+        message = "安全です";
+    }else if(data < 66){
+        result = "B"
+        message = "注意が必要です";
+    }else{
+        result = "C"
+        message = "危険です";
+    }
+
+    child.textContent = result;
+    child.style.left = (width / 2);
+
+    messageBox.textContent = message
+
+    //メーターの描写
     var g = new JustGage({
         id: "gauge",
         value: data,
@@ -35,6 +43,6 @@ function centerMeter(data){
         relatedGaugeSize: true,
         noGradient: true,
         gaugeWidthScale: 0.4,
-        displayRemaining: "test"
+        hideValue: true
     })
 }

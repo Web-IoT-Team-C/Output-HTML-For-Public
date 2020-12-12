@@ -5,7 +5,7 @@ function main(){
 
     tempGraph();
     doughnutGraph();
-    centerMeter(25);
+    centerMeter(43);
     getMedia(hdConstraints);
 }
 

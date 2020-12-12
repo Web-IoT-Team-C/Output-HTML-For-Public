@@ -1,3 +1,5 @@
+//マスク着用割合表示用グラフ
+
 function doughnutGraph(){
     var ctx = document.getElementById("mask");
     var myPieChart = new Chart(ctx, {
