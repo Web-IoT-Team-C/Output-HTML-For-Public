@@ -17,7 +17,7 @@ body{
     font-weight: bold;
 }
 
-.frame div div{
+.grey{
     color: grey;
 }
 
@@ -59,7 +59,12 @@ meter{
     text-align: center;
 }
 
+/*体温を表す数字用*/
+#temp-num{
+    font-size: xx-large;
+}
+
 /*体温の折れ線グラフ用*/
-#temp{
+#temp-graph{
     width: 50%;
 }

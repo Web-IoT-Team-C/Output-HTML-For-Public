@@ -1,11 +1,15 @@
 function main(){
     for(i = 1; i <= 4; i++){
-        meterCompose("meter"+i, 70)
+        meterCompose(i, 70)
     }
 
-    tempGraph();
+    const test = tempGraph(36.6);
+    test(39);
+
     doughnutGraph();
-    centerMeter(43);
+    var ga = centerMeter(93);
+
+    ga(93);
     getMedia(hdConstraints);
 }
 
