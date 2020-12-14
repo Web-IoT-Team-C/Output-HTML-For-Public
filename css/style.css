@@ -1,6 +1,7 @@
 body{
     background-color: #D9E5FF;
-    padding: 50px
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*白い枠を描写*/
@@ -12,11 +13,13 @@ body{
     background-color: #FFFFFF;
 }
 
+/*白い枠のタイトル用*/
 .frame section{
     font-size: x-large;
     font-weight: bold;
 }
 
+/*灰色にする部分*/
 .grey{
     color: grey;
 }
@@ -43,6 +46,7 @@ meter{
 /*中央のメーター用*/
 #gauge{
     position: relative;
+    height: 50%;
 }
 
 /*中央のメーターの文字用*/
