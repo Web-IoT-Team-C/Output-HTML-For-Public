@@ -6,7 +6,7 @@ function main(){
     const test = tempGraph(36.6);
     test(39);
 
-    doughnutGraph();
+    var check = doughnutGraph();
     var ga = centerMeter(93);
 
     ga(93);

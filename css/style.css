@@ -63,6 +63,12 @@ meter{
     text-align: center;
 }
 
+#check-mask{
+    margin: 30px;
+    width: 150px;
+    height: auto;
+}
+
 /*体温を表す数字用*/
 #temp-num{
     font-size: xx-large;

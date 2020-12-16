@@ -44,7 +44,6 @@ function centerMeter(data){
         maxTxt: "感染リスク大",
         minLabelMinFontSize: 15,
         maxLabelMinFontSize: 15,
-        minLabelFontColor: "#edebeb",
         relatedGaugeSize: true,
         noGradient: true,
         gaugeWidthScale: 0.4,
